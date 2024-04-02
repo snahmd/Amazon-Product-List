@@ -1,2 +1,2 @@
-#Amazon Product List with React and Sass
+# Amazon Product List with React and Sass
 ![preview](preview.jpg)
