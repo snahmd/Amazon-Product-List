@@ -1,0 +1,41 @@
+.product-rating {
+    align-self: start;
+    display: flex;
+    margin-top: 8px;
+    gap: 12px;
+
+    .rating-stars {
+        display: flex;
+        gap: 4px;
+        img {
+            aspect-ratio: 1;
+            object-fit: contain;
+            width: 18px;
+        }
+    }
+    .rating-count {
+        display: flex;
+        gap: 4px;
+        font-size: 14px;
+        color: var(--Secondary---Blue, #007185);
+        font-weight: 400;
+        white-space: nowrap;
+        padding: 1px 0;
+        img {
+            aspect-ratio: 1;
+            object-fit: contain;
+            width: 12px;
+            margin: auto 0;
+        }
+        span {
+            font-family: Amazon Ember, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .rating-count {
+          white-space: initial;
+        }
+    }
+
+}

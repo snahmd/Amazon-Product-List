@@ -1,0 +1,33 @@
+.product-image-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 17%;
+    margin-left: 0;
+
+    .product-image {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        img {
+            aspect-ratio: 0.81;
+            object-fit: contain;
+            width: 155px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        width: 100%;
+        .product-image {
+            margin-top: 40px;
+            justify-content: flex-start;
+            margin-left: 20px;
+        }
+    }
+    @media (max-width: 640px) {
+        .product-image {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+}
